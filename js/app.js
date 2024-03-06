@@ -4,10 +4,6 @@ const getEmail = async () => {
     const response = await fetch('https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=1');
     const data = await response.json();
     document.getElementById("mail").value = data[0];
-    let emailCount = parseInt(document.getElementById("email-count").innerText);
-    emailCount++;
-    document.getElementById("email-count").innerText = emailCount;
-   
 }
 
 const getMailBox = async (userId, domain) => {
@@ -120,5 +116,8 @@ const deleteBtn = () => {
     document.getElementById("loading").classList.remove("hidden");
 }
 
-getEmail()
+
+
+
+getEmail();
 
