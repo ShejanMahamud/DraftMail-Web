@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DraftMail | Temporary Email Address</title>
+    <meta
+      name="description"
+      content="Keep spam out of your mail and stay safe - just use a disposable temporary email address! Protect your personal email address from spam with Draft-Mail"
+    />
+
+    <meta
+      name="keywords"
+      content="temp mail, temporary emails, trash mail, 10 min mail 1 sec mail, temp mails, 2 min mail"
+    />
+    <meta name="author" content="Shejan Mahamud" />
+    <!-- css link -->
+    <!-- favicon link -->
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-DDKnoIBg.png"
+      type="image/x-icon"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KDGJSMQECK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KDGJSMQECK");
+    </script>
+
+    <link rel="stylesheet" crossorigin href="/assets/index-D1x_zfdV.css" />
+  </head>
+  <!-- head ended and body started -->
+  <body class="w-full h-auto font-mono">
+    <!-- header section started -->
+    <header class="w-full mx-auto h-auto bg-header bg-[#21232a] pb-10">
+      <div class="loading-bar-container">
+        <div class="loading-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <!-- nav menu added -->
+      <nav class="w-[90%] mx-auto py-5 flex items-center justify-between">
+        <div class="w-52">
+          <img src="/assets/logo-VPI7YU_l.png" alt="logo.png" class="w-full" />
+        </div>
+        <div class="flex items-center gap-3">
+          <button
+            class="lg:px-8 px-4 lg:py-3 py-2 rounded-full bg-[#ff0] text-[#191919] font-medium lg:text-sm text-xs hover:bg-[#2e3038] hover:text-white focus:bg-[#2e3038] focus:text-white"
+          >
+            Premium
+          </button>
+          <!-- <button
+            class="lg:px-8 px-4 lg:py-3 py-2 rounded-full font-medium lg:text-sm text-xs bg-[#2e3038] hover:bg-[#2e3040] text-white focus:bg-[#2e3038] focus:text-white"
+          >
+            Free
+          </button> -->
+        </div>
+      </nav>
+      <!-- nav mnenu ended -->
+      <!-- header section added -->
+      <section
+        class="mt-10 lg:w-[50%] w-[90%] mx-auto lg:px-10 px-5 flex items-center justify-center flex-col py-10"
+        style="
+          border-radius: 10px;
+          border: 2px dashed #383b44;
+          border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzNEM0FBQjgzRTRDMTFFOThFREY5N0M5ODQ5MjRBM0QiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzNEM0FBQjkzRTRDMTFFOThFREY5N0M5ODQ5MjRBM0QiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDM0QzQUFCNjNFNEMxMUU5OEVERjk3Qzk4NDkyNEEzRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDM0QzQUFCNzNFNEMxMUU5OEVERjk3Qzk4NDkyNEEzRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoqyyaEAAAILSURBVHja7JnNSsNAEMdnNiGlaEEoHvTUU734ED6BINIWD+YgeAr4NhXxUKRFpRQV+gTefAA99aK3nBQhlpLU3XV324CHbmxqkQT3D6X52Oz82MzOZHcQEtRwvSrguMKpXUbgpVltCGBw1WleQwo1Dr0DXX9c9IeEBQDWoNtuDnR9EN0N13XLwNgOUKuiMzIRhfTSP6NsMdyUtvckg7Zd4ogfVwEcGL2P/H6/Fejacc5TYSPqzbquVw4hKgO3nG7n7Gkh8Hm1TPB5RSCnyjd40iTImmJWVCFPzGDG6UPv8vwxyz4eswIh90QY3VJDb/EwN34icgsREX9VHkcQvmadd2SPfDXIIiGSOLnctduZB++3JrmECWYTDg24Ac+obEIgFEE9ys1IT3ntoR3ejn0/N+AxL6ZN18bHDbgBN+AG3ID/72+Ver3uAKw7vd7px6Kd/OWGUK1WU7w2Ftb3CbKCuHaRi3XylNeWa07OMTcuEvOayWnADXhWwWXNRR7s7h6Vsg7rTndqZd2JiIXnmzwpFosbWQcPoaTAGWcBQZs+q6uFHKyXOXXUv0UH01fg/WpjX6b8NL/fucuE1RSvTDic97M26Wbj8GQbkEYRBK9/tfEvw3JxbRLhkkrimBQzQ7ay//MrW24t/7siMrzRDZjWVdryAfJ5zyn6cZKareXW8pUtji/SdtJb/hJgAMUM9oJRXrxYAAAAAElFTkSuQmCC);
+          border-image-slice: 2;
+          border-image-repeat: round;
+        "
+      >
+        <h1 class="text-2xl text-white font-medium mb-10 text-center">
+          Your Temporary Email Address
+        </h1>
+        <div
+          class="bg-[#2e3038] rounded-full w-full py-2 px-3 flex items-center justify-between"
+        >
+          <input
+            type="text"
+            class="bg-transparent lg:w-[80%] w-full focus:outline-none text-white text-lg font-medium lg:px-10 pl-3 pr-2 font-sans"
+            id="mail"
+          />
+          <div class="flex items-center lg:gap-3 gap-1">
+            <button
+              class="bg-[#00c497] hover:bg-[#4B4B51] lg:w-16 lg:h-16 h-8 w-8 rounded-full flex items-center justify-center focus:tooltip"
+              data-tip="Copied"
+              onclick="copyText()"
+            >
+              <i class="fa-solid fa-copy text-white lg:text-2xl text-xs"></i>
+            </button>
+            <button
+              class="bg-[#00c497] hover:bg-[#4B4B51] lg:w-16 lg:h-16 h-8 w-8 rounded-full flex items-center justify-center hover:tooltip"
+              data-tip="Regenerate"
+              onclick="getEmail()"
+            >
+              <i
+                class="fa-solid fa-rotate-right text-white lg:text-2xl text-xs"
+              ></i>
+            </button>
+            <button
+              class="bg-[#00c497] hover:bg-[#4B4B51] lg:w-16 lg:h-16 h-8 w-8 rounded-full flex items-center justify-center hover:tooltip"
+              data-tip="Reload"
+              onclick="reLoad()"
+            >
+              <i
+                class="fa-solid fa-arrows-rotate lg:text-2xl text-xs text-white"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <p
+          class="text-white font-normal text-center opacity-80 mt-5 lg:text-base text-xs font-sans tracking-wider"
+        >
+          Forget about spam, advertising mailings, hacking and attacking robots.
+          Keep your real mailbox clean and secure. Temp Mail provides temporary,
+          secure, anonymous, free, disposable email address.
+        </p>
+      </section>
+      <div
+        class="lg:w-[50%] w-[90%] mx-auto mt-5 flex items-center gap-5 lg:gap-20 justify-center"
+      >
+        <div
+          class="lg:px-8 px-8 py-3 rounded-2xl font-medium text-sm bg-[#2e3038] hover:bg-[#2e3040] text-white focus:bg-[#2e3038] focus:text-white flex items-center flex-col w-[50%]"
+        >
+          <span class="lg:text-lg text-base font-medium text-center"
+            >Email Created</span
+          >
+          <span
+            class="font-bold text-[#00c497] tracking-widest text-sm lg:font-base"
+            id="email-count"
+            >384783</span
+          >
+        </div>
+        <div
+          class="px-8 py-3 rounded-2xl font-medium text-sm bg-[#2e3038] hover:bg-[#2e3040] text-white focus:bg-[#2e3038] focus:text-white flex items-center flex-col w-[50%]"
+        >
+          <span class="lg:text-lg text-base font-medium text-center"
+            >Message Received</span
+          >
+          <span
+            class="font-bold text-[#00c497] tracking-widest text-sm lg:font-base"
+            >10284</span
+          >
+        </div>
+      </div>
+    </header>
+    <!-- main section started -->
+    <main class="w-ful h-auto py-20 bg-[#f6f7f9]">
+      <section
+        class="lg:w-[50%] w-[90%] mx-auto border-2 border-[#22242b] border-opacity-10 rounded-2xl overflow-hidden h-[500px] bg-white overflow-y-scroll scrollbar"
+      >
+        <div
+          class="bg-[#22242b] w-full flex items-center justify-between py-5 px-10 text-white font-semibold"
+          id="first-head"
+        >
+          <span>Sender</span>
+          <span>Subject</span>
+          <span>View</span>
+        </div>
+
+        <div
+          class="flex items-center justify-between w-full hidden bg-[#22242b] py-5 px-10"
+          id="second-head"
+        >
+          <button class="text-white font-semibold" onclick="backBtn()">
+            <i class="fa-solid fa-arrow-left text-2xl"></i>
+          </button>
+          <button class="text-white font-semibold" onclick="deleteBtn()">
+            <i class="fa-solid fa-trash text-2xl"></i>
+          </button>
+        </div>
+
+        <div
+          id="mail-box"
+          class="flex items-center flex-col gap-2 w-full"
+        ></div>
+
+        <div id="mail-body"></div>
+        <div
+          class="w-full h-full flex items-center justify-center flex-col text-[#191919]"
+          id="loading"
+        >
+          <h1 class="font-medium text-lg">Your Inbox is Empty</h1>
+          <p class="text-xs pb-3">Waiting For Message...</p>
+          <span class="loading loading-dots loading-lg"></span>
+        </div>
+      </section>
+
+      <section class="w-full my-28 font-poppins">
+        <h1 class="text-5xl font-bold text-center mb-5 font-mono">
+          Awesome <span class="text-[#00c497]">Features</span>
+        </h1>
+
+        <p
+          class="text-center font-medium opacity-90 mb-16 lg:w-[50%] w-full mx-auto font-mono text-[#8c92a5]"
+        >
+          Disposable temporary email protects your real email address from spam,
+          advertising mailings, malwares.
+        </p>
+
+        <div
+          class="w-[80%] mx-auto grid lg:grid-cols-3 grid-cols-1 row-auto items-center gap-10"
+        >
+          <div
+            class="shadow-xl rounded-2xl px-10 py-10 flex flex-col items-center gap-2 relative bg-white"
+          >
+            <div
+              class="w-5 h-5 rounded-full bg-[#00c497] absolute right-5 top-5"
+            ></div>
+            <div
+              class="w-5 h-5 rounded-full bg-yellow-500 absolute left-5 bottom-5"
+            ></div>
+            <div
+              class="bg-[#00c497] h-16 w-16 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-envelope-open-text text-3xl text-white"></i>
+            </div>
+            <h1 class="text-xl font-medium">Simple & Free</h1>
+            <p class="text-center text-sm">
+              Create temp emails fast simple steps & always free
+            </p>
+          </div>
+          <div
+            class="shadow-xl rounded-2xl px-10 py-10 flex flex-col items-center gap-2 relative bg-white"
+          >
+            <div
+              class="w-5 h-5 rounded-full bg-[#00c497] absolute right-7 top-9"
+            ></div>
+            <div
+              class="w-5 h-5 rounded-full bg-yellow-500 absolute left-4 bottom-4"
+            ></div>
+            <div
+              class="bg-[#00c497] h-16 w-16 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-user-shield text-3xl text-white"></i>
+            </div>
+            <h1 class="text-xl font-medium">100% Safe</h1>
+            <p class="text-center text-sm">
+              Protect your privacy by not allowing spam in your personal inbox
+            </p>
+          </div>
+          <div
+            class="shadow-xl rounded-2xl px-10 py-10 flex flex-col items-center gap-2 relative bg-white"
+          >
+            <div
+              class="w-5 h-5 rounded-full bg-[#00c497] absolute right-8 top-5"
+            ></div>
+            <div
+              class="w-5 h-5 rounded-full bg-yellow-500 absolute left-10 bottom-10"
+            ></div>
+            <div
+              class="bg-[#00c497] h-16 w-16 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-globe-europe text-3xl text-white"></i>
+            </div>
+            <h1 class="text-xl font-medium">Worldwide</h1>
+            <p class="text-center text-sm">
+              Used by professionals all around the world , try it now
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-[90%] mx-auto my-28 font-poppins" id="faq">
+        <h1
+          class="text-4xl lg:text-5xl pl-3 font-bold text-center mb-5 font-mono"
+        >
+          Our <span class="text-[#00c497]">FAQ</span>
+        </h1>
+        <p
+          class="text-secondary-text font-medium text-sm pl-3 text-center mb-16 font-mono text-[#8c92a5]"
+        >
+          You can explore some frequintly asked questions of ours.
+        </p>
+        <div
+          class="w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-5 lg:gap-16 items-center"
+        >
+          <div>
+            <img src="/assets/faq-Dpbn9oq2.png" alt="faq.png" class="w-[80%]" />
+          </div>
+          <div class="*:mb-4">
+            <div class="collapse collapse-plus bg-white rounded-3xl p-2">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-base font-medium">
+                <p class="focus:text-[#00c497]">
+                  What is a temporary / disposable / anonymous mail?
+                </p>
+              </div>
+              <div class="collapse-content">
+                <p>
+                  <b>Disposable e-mail</b> is a temporary and completely
+                  anonymous email address with a predetermined lifetime that
+                  does not require any registration.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white rounded-3xl p-2">
+              <input type="radio" name="my-accordion-3" />
+              <div
+                class="collapse-title text-base font-medium focus:text-[#00c497]"
+              >
+                Why do you need a temporary email address?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  To register on dubious sites, create and send anonymous
+                  correspondence. It is particularly useful for all situations
+                  in which your privacy is of paramount importance i.e. forums,
+                  sweepstakes, instant messaging.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white rounded-3xl p-2">
+              <input type="radio" name="my-accordion-3" />
+              <div
+                class="collapse-title text-base font-medium focus:text-[#00c497]"
+              >
+                What is the difference of disposable mail from the usual email?
+              </div>
+              <div class="collapse-content">
+                <ul class="list-unstyled">
+                  <li>It does not require registration;</li>
+                  <li>
+                    It is completely anonymous. All your personal details,
+                    address, IP address are removed after the period of mailbox
+                    use is over.
+                  </li>
+                  <li>Messages are delivered instantaneously.</li>
+                  <li>
+                    E-mail address is generated automatically. You do not have
+                    to manually pick up a free host name.
+                  </li>
+                  <li>
+                    Mailbox is fully protected from spam, hacking and exploits.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white rounded-3xl p-2">
+              <input type="radio" name="my-accordion-3" />
+              <div
+                class="collapse-title text-base font-medium focus:text-[#00c497]"
+              >
+                How to extend the lifetime of the email address?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Email address is valid until you delete it or until the
+                  service changes the domain list. Extending time is not needed.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-white rounded-3xl p-2">
+              <input type="radio" name="my-accordion-3" />
+              <div
+                class="collapse-title text-base font-medium focus:text-[#00c497]"
+              >
+                Can I check the received emails?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Yes, they are displayed under the name of your mailbox. You
+                  can simultaneously see the sender, subject and text of the
+                  letter. If your expected incoming emails does not appear in
+                  the list, press the button <b>'Refresh'</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-secondary-text font-medium text-sm pl-3 text-center mt-10 font-mono lg:w-[50%] w-full mx-auto text-[#8c92a5]"
+        >
+          We have answered all frequently asked questions about temporary
+          mailboxes. If you have any unanswered questions feel free to use our
+          feedback service.
+        </p>
+      </section>
+
+      <!-- post section -->
+
+      <section class="w-[90%] mx-auto my-28">
+        <h1 class="text-4xl lg:text-5xl pl-3 font-bold text-center mb-5">
+          Popular <span class="text-[#00c497]">Posts</span>
+        </h1>
+
+        <div
+          class="grid lg:grid-cols-2 grid-cols-1 row-auto items-center gap-12 w-full font-sans mt-16"
+        >
+          <div
+            class="bg-white rounded-2xl shadow-xl flex items-center gap-5 px-8 py-4"
+          >
+            <div class="">
+              <h1 class="font-medium mb-3">
+                Private domains. How to get your own Temporary Email (2021)
+              </h1>
+              <p class="text-sm opacity-60">
+                How to create temporary email on your own private domain and how
+                it helps you to bypass common issues with registrations.
+              </p>
+            </div>
+            <img
+              src="/assets/post-1-JrZIr0Xc.webp"
+              alt="post-1.png"
+              class="rounded-xl"
+            />
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl flex items-center gap-5 px-8 py-4"
+          >
+            <div class="">
+              <h1 class="font-medium mb-3">
+                Private domains. How to get your own Temporary Email (2021)
+              </h1>
+              <p class="text-sm opacity-60">
+                How to create temporary email on your own private domain and how
+                it helps you to bypass common issues with registrations.
+              </p>
+            </div>
+            <img
+              src="/assets/post-1-JrZIr0Xc.webp"
+              alt="post-1.png"
+              class="rounded-xl"
+            />
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl flex items-center gap-5 px-8 py-4"
+          >
+            <div class="">
+              <h1 class="font-medium mb-3">
+                Private domains. How to get your own Temporary Email (2021)
+              </h1>
+              <p class="text-sm opacity-60">
+                How to create temporary email on your own private domain and how
+                it helps you to bypass common issues with registrations.
+              </p>
+            </div>
+            <img
+              src="/assets/post-1-JrZIr0Xc.webp"
+              alt="post-1.png"
+              class="rounded-xl"
+            />
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl flex items-center gap-5 px-8 py-4"
+          >
+            <div class="">
+              <h1 class="font-medium mb-3">
+                Private domains. How to get your own Temporary Email (2021)
+              </h1>
+              <p class="text-sm opacity-60">
+                How to create temporary email on your own private domain and how
+                it helps you to bypass common issues with registrations.
+              </p>
+            </div>
+            <img
+              src="/assets/post-1-JrZIr0Xc.webp"
+              alt="post-1.png"
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section ended -->
+
+    <!-- footer section added -->
+
+    <footer class="w-full px-10 py-10 bg-[#22242b]">
+      <div
+        class="flex lg:flex-row flex-col items-center justify-center gap-10 font-medium text-[#8c92a5] text-lg"
+      >
+        <span>FAQ</span>
+        <span>PRIVACY POLICY</span>
+        <span>TERMS OF SERVICE</span>
+        <span>CONTACTS</span>
+        <span>BLOG</span>
+        <span>PRICING</span>
+        <span>ABOUT</span>
+      </div>
+      <hr class="border border-[#8c92a5] w-[80%] mx-auto opacity-10 my-5" />
+
+      <p class="text-center text-[#8c92a5]">
+        2024 All Rights Reserved To @ShejanMahamud
+      </p>
+    </footer>
+    <!-- script js added -->
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
